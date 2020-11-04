@@ -17,6 +17,20 @@ The site can be viewed [here](insert gh pages link)
 4. Unzip the downloaded folder
 5. Open the _index.html_ file to view the site locally
 
+## Specs
+
+Describe: Dice()
+
+Test: It will register user button click and return a random number 1-6  
+Expect: Dice().toEqual(1-6)
+
+Describe: TurnTotal()
+
+Test: It will store user die roll totals each turn
+Expect: TurnTotal.prototype.addRoll().toEqual([turnTotal])
+
+
+
 ## Known Bugs
 There are no known bugs at this time
 
