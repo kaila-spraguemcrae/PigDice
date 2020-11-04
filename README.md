@@ -39,7 +39,10 @@ Describe: UserInfo.prototype.totals()
 Test: It will add turntotals to players total score
 Expect: UserInfo.prototype.totals(turnTotals).toEqual(totals + turnTotals)
 
+Describe: winner()
 
+Test: It will show "Player "" Won!" on screen when user score equals 100
+Expect: winner(p1.total = 100).toEqual(Win)
 
 ## Known Bugs
 There are no known bugs at this time

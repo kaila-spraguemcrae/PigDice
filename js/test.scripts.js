@@ -25,23 +25,44 @@ UserInfo.prototype.turnTotals = function() {
   }
 }
 
+function winner(player) {
+  if (playerOne.total >= 100){
+    alert("Player One Won!");
+  } else if (playerTwo.total >= 100){
+    alert('Player Two Won!');
+  }
+}
 
-let playerOne = new UserInfo ("player one")
-//let playerTwo = new UserInfo ("player two")
+let playerOne = new UserInfo ("player one");
+//let playerTwo = new UserInfo ("player two");
 
-/* playerOne.addRollDice(); */
+playerTwo.total = 100
+
+//------------
+
 playerOne.turnTotals();
 console.log("Dice Roll: " + roll);
-console.log(playerOne);
+console.log("turn total: " + playerOne.turntotal);
 
 
 playerOne.turnTotals();
 console.log("Dice Roll: " + roll);
-console.log(playerOne);
+console.log("turn total: " + playerOne.turntotal);
 
 playerOne.totals();
-console.log(playerOne);
+console.log("total: " + playerOne.total);
 
+playerOne.turnTotals();
+console.log("Dice Roll: " + roll);
+console.log("turn total: " + playerOne.turntotal);
+
+
+playerOne.turnTotals();
+console.log("Dice Roll: " + roll);
+console.log("turn total: " + playerOne.turntotal);
+
+playerOne.totals();
+console.log("total: " + playerOne.total);
 
 
 
