@@ -24,10 +24,20 @@ Describe: rollDice()
 Test: It will register user button click and return a random number 1-6  
 Expect: rollDice().toEqual(1-6)
 
-Describe: TurnTotal()
+Describe: UserInfo()
+
+Test: it will hold the framework for user info
+Expect: UserInfo(name).toEqual(name, rollEvent, turntotal, total);
+
+Describe: UserInfo.prototype.turnTotals
 
 Test: It will store user die roll totals each turn
-Expect: TurnTotal.prototype.addRoll().toEqual([turnTotal])
+Expect: UserInfo.prototype.turnTotals().toEqual([turnTotal])
+
+Describe: UserInfo.prototype.totals()
+
+Test: It will add turntotals to players total score
+Expect: UserInfo.prototype.totals(turnTotals).toEqual(totals + turnTotals)
 
 
 
