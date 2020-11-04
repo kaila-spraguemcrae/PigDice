@@ -19,10 +19,10 @@ The site can be viewed [here](insert gh pages link)
 
 ## Specs
 
-Describe: Dice()
+Describe: rollDice()
 
 Test: It will register user button click and return a random number 1-6  
-Expect: Dice().toEqual(1-6)
+Expect: rollDice().toEqual(1-6)
 
 Describe: TurnTotal()
 
