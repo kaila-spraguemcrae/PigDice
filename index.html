@@ -4,18 +4,20 @@
 <head>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
   <script src="js/jquery-3.5.1.js"></script>
   <script src="js/scripts.js"></script>
   <title>Pig Dice</title>
 </head>
 
 <body>
-  <div class="container">
+  <div class="container-fluid">
     <div class="jumbotron">
       <h1>Pig Dice</h1>
     </div>
     <div class="intro">
-      <ul>
+      <span class="rules">
+      <ul> 
         <li> Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold"</li>
 
         <li> If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
@@ -27,37 +29,37 @@
 
         <li>The first player to score 100 or more points wins.</li>
       </ul>
+    </span>
       <button id="button">Play Game!</button>
     </div>
     <div class="game-board">
-      <p>Game Board</p>
       <div class="row">
         <div class="col-3">
-          <p>Player 1 turn total</p>
+          <h2>Player 1</h2>
+          <p>Turn Total:</p>
           <div class="p1-turntotal">
           </div>
         </div>
         <div class="col-3">
           <p id="placeholder1">
-  
           </p>
           <button id="p1-roll">Roll Dice</button>
         </div>
         <div class='col-3'>
           <p id="placeholder2">
-  
           </p>
           <button id="p2-roll">Roll Dice</button>
         </div>
         <div class="col-3">
-          <p>player 2 turntotal</p>
+          <h2>Player 2</h2>
+          <p>Turn Total:</p>
           <div class="p2-turntotal">
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-3">
-          <p>Player 1 score total</p>
+          <p>Score Total:</p>
           <div class="p1-total">
           </div>
         </div>
@@ -68,7 +70,7 @@
           <button id="p2-hold">Hold</button>
         </div>
         <div class="col-3">
-          <p>player 2 score total</p>
+          <p>Score Total:</p>
           <div class="p2-total">
           </div>
         </div>

@@ -1,3 +1,35 @@
 .game-board {
   display: none;
 }
+.container-fluid{
+  width: 100%;
+}
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
+  background-color: pink;
+
+}
+.jumbotron {
+  background-color: rgba(0, 0, 0, 0);
+}
+.jumbotron h1{
+  font-size: 80px;
+  text-align: center;
+}
+
+#placeholder1 {
+  font-size: 80px;
+}
+
+#placeholder2 {
+  font-size: 80px;
+}
+
+button {
+  margin: 5%;
+}
+.rules {
+  text-align: left;
+}

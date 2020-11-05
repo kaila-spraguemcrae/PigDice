@@ -12,7 +12,7 @@ function UserInfo(name) {
   this.turntotal = 0;
   this.total = 0;
 }
-UserInfo.prototype.diceRolls = function() {
+UserInfo.prototype.diceRolls = function () {
   this.diceRoll = 1 + Math.floor(Math.random() * 6);
 }
 
@@ -25,7 +25,7 @@ UserInfo.prototype.totals = function () {
 UserInfo.prototype.turnTotals = function () {
   if (this.diceRoll === 1) {
     this.turntotal = 0;
-    //alert (your turn is over)
+    alert("You rolled a 1! Your turn is over")
   } else if (this.diceRoll > 1) {
     this.turntotal += this.diceRoll;
   }
@@ -61,11 +61,12 @@ $(document).ready(function () {
     playerOne.totals();
     $(".p1-total").text(playerOne.total);
     $(".p1-turntotal").text(playerOne.turntotal);
+    winner(playerOne.total);
   });
 
   $("#p2-roll").click(function () {
     playerTwo.diceRolls();
-    $("#placeholder2").text(this.diceRoll);
+    $("#placeholder2").text(playerTwo.diceRoll);
     playerTwo.turnTotals();
     $(".p2-turntotal").text(playerTwo.turntotal);
   });
@@ -74,6 +75,7 @@ $(document).ready(function () {
     playerTwo.totals();
     $(".p2-total").text(playerTwo.total);
     $(".p2-turntoal").text(playerTwo.turntotal);
+    winner(playerTwo.total);
   })
 
 });

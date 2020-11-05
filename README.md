@@ -1,7 +1,7 @@
 # TITLE 
 <img src="https://github.com/Dave-Sterry.png" width="200px" height="auto">
 
-### A website by David Sterry updated on -----
+### A website by David Sterry Kaila Sprague Mcrae updated on -----
 
 ## Description
 
@@ -58,9 +58,11 @@ _Please contact me at sterry.david@gmail.com in regards to this website_
 * Git
 * Bootstrap
 * Visual Studios Code
+* Javascript 
+* jQuery
 
 # License
 
 This project is licensed under **MIT 2.0**
 
-Copyright (c) 2020 **David Sterry**
+Copyright (c) 2020 **David Sterry Kaila Sprague Mcrae**
