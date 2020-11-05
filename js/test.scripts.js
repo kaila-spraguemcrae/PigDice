@@ -1,3 +1,5 @@
+//business logic
+
 function rollDice() {
   return 1 + Math.floor(Math.random() * 6);
 }
@@ -34,36 +36,49 @@ function winner(player) {
 }
 
 let playerOne = new UserInfo ("player one");
-//let playerTwo = new UserInfo ("player two");
+let playerTwo = new UserInfo ("player two");
 
 playerTwo.total = 100
 
-//------------
-
-playerOne.turnTotals();
-console.log("Dice Roll: " + roll);
-console.log("turn total: " + playerOne.turntotal);
-
-
-playerOne.turnTotals();
-console.log("Dice Roll: " + roll);
-console.log("turn total: " + playerOne.turntotal);
-
-playerOne.totals();
-console.log("total: " + playerOne.total);
-
-playerOne.turnTotals();
-console.log("Dice Roll: " + roll);
-console.log("turn total: " + playerOne.turntotal);
+//UI Logic
+$(document).ready(function(){
+  $("#button").click(function(){
+    $(".game-board").show();
+    $(".intro").hide();
+  });
+});
 
 
-playerOne.turnTotals();
-console.log("Dice Roll: " + roll);
-console.log("turn total: " + playerOne.turntotal);
-
-playerOne.totals();
-console.log("total: " + playerOne.total);
 
 
+//-------How to call:--------
+
+// playerOne.turnTotals();
+// console.log("Dice Roll: " + roll);
+// console.log("turn total: " + playerOne.turntotal);
+
+
+// playerOne.turnTotals();
+// console.log("Dice Roll: " + roll);
+// console.log("turn total: " + playerOne.turntotal);
+
+// playerOne.totals();
+// console.log("total: " + playerOne.total);
+
+// playerOne.turnTotals();
+// console.log("Dice Roll: " + roll);
+// console.log("turn total: " + playerOne.turntotal);
+
+
+// playerOne.turnTotals();
+// console.log("Dice Roll: " + roll);
+// console.log("turn total: " + playerOne.turntotal);
+
+// playerOne.totals();
+// console.log("total: " + playerOne.total);
+
+//--------------
+
+// winner(playerOne);
 
 
